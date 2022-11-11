@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button>
+        </ion-menu-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Lista de usuários</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div style="background-color:var(--ion-color-primary);width: 100%; border-radius: 35px 35px 0% 0%; margin-top: 10px; min-height: 100%" class="ion-padding">
+
+    <ion-card class="ion-padding" color="light">
+      <div style="display: flex; justify-content:center;">
+      <ion-icon name="information-circle-sharp" style="font-size: 2rem;"></ion-icon>
+      </div>
+      <ion-card-title style="font-size: 15px;">
+        Toque sobre um usuário para visualizar mais detalhes.
+      </ion-card-title>
+     </ion-card>
+
+     <ion-card>
+      <ion-row class="ion-padding" color="primary">
+        <ion-input
+        placeholder="Pesquise o nome do usuário aqui"
+        type="search" [(ngModel)]="nomePesquisado" (ngModelChange)="buscar()"
+        required ></ion-input>
+        <ion-buttons (click)="buscar()">
+          <ion-button>
+            <ion-icon slot="end" name="search"></ion-icon>
+          </ion-button>
+  
+        </ion-buttons>
+      </ion-row>
+    </ion-card>
+
+
+    <ion-card *ngFor="let usuario of usuarios" (click)="navigateInfoUsuarios(usuario.id_usuario)" class="ioncard ion-activatable">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-label>
+            <h1>
+              {{usuario.nome_usuario}}
+            </h1>
+            <p>
+              {{usuario.email_usuario}}
+            </p>
+          </ion-label>
+          <ion-avatar slot="start">
+            <ion-img *ngIf="usuario.foto_usuario !== ''"
+            src="http://localhost/AppWeb/src/img/fotos_de_tudo/{{usuario.foto_usuario}}"
+            ></ion-img>
+            
+            <ion-img *ngIf="usuario.foto_usuario == null || usuario.foto_usuario == ''"
+            src="https://www.w3schools.com/howto/img_avatar.png"
+            ></ion-img>
+          </ion-avatar>
+        </ion-item>
+      </ion-list>
+  
+    </ion-card>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="add" (click)="navigateAddUsuario()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>  
+
+</ion-content>

@@ -1,0 +1,34 @@
+ion-content {
+    
+    height: 100vh;
+    --background: linear-gradient(#712F79, #FF5F6D);
+ 
+}
+
+ion-img{
+    height: 170px;
+    width: 170px;
+    margin-top: 3rem;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ion-item {
+    --border-color: var(--ion-color-primary, #712F79);
+  }
+
+ion-button{
+    height: 3.5rem;
+}
+
+#card-login{
+    width: 95vw;
+    margin-top: 15vh;
+    box-shadow: 10px;
+}

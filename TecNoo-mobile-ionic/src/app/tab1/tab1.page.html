@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Meus chamados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" *ngIf="tipoUsuarioLogado == 'Cliente'">Meus chamados</ion-title>
+      <ion-title size="large" *ngIf="tipoUsuarioLogado == 'Usuario'">Todos os chamados</ion-title>
+      <div slot="end">
+        <ion-buttons>
+          <ion-button (click)="refreshChamados()">
+            <ion-icon color="success" slot="end" name="reload"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+     
+    </ion-toolbar>
+  </ion-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card color="success" class="ioncard ion-activatable" >
+            <ion-card-header>
+              <ion-card-title style="font-size: 19px;">Chamados abertos.</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <div class="ion-text-center ">
+                <h1 style="font-size: 40px; font-weight: bolder;" >
+                {{numChamadosAbertos}}
+                </h1>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="danger" class="ioncard ion-activatable">
+            <ion-card-header>
+              <ion-card-title style="font-size: 19px;">Chamados finalizados.</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <div class="ion-text-center">
+                <h1 style="font-size: 40px; font-weight: bolder;">
+                {{numChamadosFinalizados}}
+                </h1>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- Pesquisar chamado -->
+    <ion-card>
+    <ion-row class="ion-padding" color="primary">
+      <ion-input *ngIf="tipoPesquisa == '' " placeholder="Selecione ao lado o tipo de pesquisa"
+      [(ngModel)]="termoPesquisado"
+      type="search" (ngModelChange)="carregar()" required ></ion-input>
+      <ion-buttons (click)="carregar()">
+      
+      </ion-buttons>
+      <ion-input *ngIf="tipoPesquisa != '' " placeholder="Buscando por {{tipoPesquisa}}"
+      [(ngModel)]="termoPesquisado"
+      type="search" (ngModelChange)="carregar()" required ></ion-input>
+      <ion-buttons (click)="carregar()">
+        <ion-button (click)="presentAlert()">
+          <ion-icon slot="end" name="search"></ion-icon>
+        </ion-button>
+
+      </ion-buttons>
+    </ion-row>
+  </ion-card>
+  <ion-card class="ion-padding" color="warning">
+    <div style="display: flex; justify-content:center">
+    <ion-icon name="information-circle-sharp" style="font-size: 2rem;"></ion-icon>
+    </div>
+    <br>
+    <ion-card-title style="font-size: 15px;">
+      Toque sobre um chamado para visualizar mais detalhes.
+    </ion-card-title>
+   </ion-card>
+
+   <!-- Caso o usuário não possua nenhum chamado registrado, esse card será renderizado  -->
+   <ion-card color="primary" class="ion-padding" *ngIf="chamados.length == 0">
+    <div class="ion-text-center">
+      <ion-icon name="sad" style="font-size: 5rem;"></ion-icon>
+    </div>
+    <br>
+    <ion-card-title color="primary" style="font-size: 18px;">
+      Parece que você ainda não utilizou nossos serviços.
+    </ion-card-title>
+    <br>
+    <br>
+    <ion-text style="text-align: center; font-size: 18px;">
+      <b>Que tal começar agora?</b>
+    </ion-text>
+    <ion-card-content>
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <ion-button color="success" (click)="navigateAddChamado()"><b>Quero abrir um chamado!</b></ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+  <ion-card (click)="presentActionSheet(chamado)" *ngFor="let chamado of chamados" class="ioncard ion-activatable cardChamado">
+    <ion-list>
+      <ion-item lines="none">
+        <ion-icon name="hammer-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h1>{{chamado.titulo}}</h1>
+          <p *ngIf="tipoUsuarioLogado == 'Usuario'">{{chamado.nome_cliente}}</p>
+          <p *ngIf="tipoUsuarioLogado == 'Cliente'">{{chamado.descricao}}</p>
+        </ion-label>
+        <ion-badge *ngIf="chamado.status == 'Finalizado'" color="danger">
+          <p style="font-size: 12px;">
+            {{chamado.status}}
+          </p>
+        </ion-badge>
+        <ion-badge *ngIf="chamado.status == 'Cancelado'" color="warning">
+          <p style="font-size: 12px;">
+            {{chamado.status}}
+          </p>
+        </ion-badge>
+        <ion-badge *ngIf="chamado.status !== 'Finalizado' && chamado.status !== 'Cancelado'" color="success">
+          <p style="font-size: 12px;">
+            {{chamado.status}}
+          </p>
+        </ion-badge>
+        
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+    
+ <!-- Botão flutuante de adicionar chamado, só irá aparecer se o usuário logado for um cliente -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="tipoUsuarioLogado == 'Cliente'">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="add" (click)="navigateAddChamado()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>    
+
+</ion-content>

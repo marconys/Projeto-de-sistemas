@@ -1,0 +1,148 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Descartes solidários
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- O isLoading abaixo evita possíveis bugs, basicamente com isso, garante que a tela só será exibida após a nossa requisição ter sido executada -->
+<ion-content [fullscreen]="true" *ngIf="isLoading == false">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Todos os descartes
+      </ion-title>
+      <div slot="end">
+        <ion-buttons>
+          <ion-button (click)="refreshDescartes()">
+            <ion-icon color="primary" slot="end" name="reload"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </ion-toolbar>
+   
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+       <!-- Vamos fazer renderização condicional em todos os cards, a regra é a seguinte:
+        Se o usuário logado for um funcionário, então os cards que demonstram o total de descartes por status serão renderizados. Se o usuário logado for um cliente, então renderizamos dois cards, um que demonstra como funciona o descarte solidário e outro que é um botão para o cliente solicitar um descarte. -->
+
+        <!-- Card que mostra como funciona o descarte, será renderizado caso o usuário logado seja um cliente -->
+      <ion-col size="6">
+        <ion-card color="primary" type="button" (click)="navigateSaibaMaisDescarte()" class="ion-activatable ion-card" *ngIf="tipoUsuarioLogado == 'Cliente'">
+          <ion-card-header>
+            <ion-card-title style="font-size: 19px;">Entenda a iniciativa</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="ion-text-center">
+              <ion-icon name="help-circle" style="font-size: 4rem;"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Card que é responsável por navegar para a página de solicitar um descarte, será renderizado caso o usuário logado seja um cliente -->
+      <ion-col size="6">
+        <ion-card color="tertiary" (click)="navigateAddDescarte()" class="ion-activatable ion-card" *ngIf="tipoUsuarioLogado == 'Cliente'">
+          <ion-card-header>
+            <ion-card-title style="font-size: 18px;">Quero fazer um descarte</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="ion-text-center">
+              <ion-icon name="heart-circle" style="font-size: 4rem;"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Card que demonstra o número de descartes com status em aberto,  -->
+      <ion-col size="6">
+        <ion-card color="success" (click)="buscaDescartesAbertos()" class="ioncard ion-activatable" *ngIf="tipoUsuarioLogado == 'Usuario'">
+          <ion-card-header>
+            <ion-card-title style="font-size: 19px;">Descartes abertos.</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="ion-text-center ">
+              <h1 style="font-size: 40px; font-weight: bolder;" >
+              {{numDescartesAbertos}}
+              </h1>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+
+      <!-- Card que demonstra o total de descartes finalizados, será renderizado caso o usuário logado seja um funcionário -->
+      <ion-col size="6">
+        <ion-card color="danger" (click)="buscaDescartesFinalizados()" class="ioncard ion-activatable" *ngIf="tipoUsuarioLogado == 'Usuario'">
+          <ion-card-header>
+            <ion-card-title style="font-size: 19px;">Descartes finalizados.</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="ion-text-center">
+              <h1 style="font-size: 40px; font-weight: bolder;">
+              {{numDescartesFinalizados}}
+              </h1>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="ion-padding" color="warning">
+    <div style="display: flex; justify-content:center">
+    <ion-icon name="information-circle-sharp" style="font-size: 2rem;"></ion-icon>
+    </div>
+    <br>
+    <ion-card-title style="font-size: 15px;">
+      Toque sobre um descarte para visualizar mais detalhes.
+    </ion-card-title>
+   </ion-card>
+
+
+  <!-- Card responsável por renderizar a lista dos descartes -->
+
+  <ion-card (click)="presentActionSheet(descarte)" *ngFor="let descarte of descartes" class="ioncard ion-activatable cardChamado">
+    <ion-list>
+      <ion-item lines="none">
+        <ion-icon name="heart-circle-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h1>{{descarte.nome_hardware}}</h1>
+          <p>{{descarte.descricao}}</p>
+        </ion-label>
+        <ion-badge *ngIf="descarte.status !== 'Finalizado' && descarte.status !== 'Cancelado'" color="success">
+          <p>{{descarte.status}}</p>
+        </ion-badge>
+        <ion-badge *ngIf="descarte.status === 'Cancelado'" color="warning">
+          <p>{{descarte.status}}</p>
+        </ion-badge>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+
+<!-- Card responsável por informar o usuário se ele tem ou não descartes cadastrados -->
+<ion-card *ngIf="cardNenhumDescarte == true" color="primary" class="ion-padding">
+  <div class="ion-text-center">
+    <ion-icon name="sad" style="font-size: 5rem;"></ion-icon>
+  </div>
+  <br>
+  <ion-card-title color="primary" style="font-size: 18px;">
+    Parece que você nunca fez um descarte solidário.
+  </ion-card-title>
+  <br>
+  <br>
+  <ion-text style="text-align: center; font-size: 18px;">
+    <b>Que tal começar agora?</b>
+  </ion-text>
+  <ion-card-content>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <ion-button color="success" (click)="navigateSaibaMaisDescarte()"><b>Quero conhecer mais!</b></ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>
+</ion-content>

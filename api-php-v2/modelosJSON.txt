@@ -1,0 +1,214 @@
+
+REQUISIÇÕES USUÁRIOS
+
+
+ADICIONAR USUÁRIO <--OK
+{
+    "requisicao": "add",
+    "nome_usuario":"Fabricio Monteiro",
+    "email_usuario": "fabriciocostamonteiro@hotmail.com",
+    "id_nivel_usuario": 1,
+    "login_usuario": "xfabriicio",
+    "senha": "123456",
+    "foto_usuario": "teste.png"
+}
+
+LOGIN do USUARIO <-- OK 
+{
+  "requisicao": "login",
+  "email": "fabriciocostamonteiro@hotmail.co",
+  "senha": "123456"
+}
+
+
+
+http://localhost/api-php-v2/controller-usuarios.php
+LISTAR TODOS os USUÁRIOS <-- OK
+{
+    "requisicao": "listar",
+    "nome": ""
+}
+
+
+LISTAR TODOS os USUÁRIOS BUSCANDO POR NOME <-- OK
+{
+    "requisicao": "listar",
+    "nome": "Fabricio"
+}
+
+
+
+REQUISIÇÕES NIVEIS
+
+ADICIONAR NIVEL <------- OK
+{
+    "requisicao": "add",
+    "nome": "TesteNivel"
+}
+
+
+EDITAR NIVEIS <------ OK
+
+{
+  "requisicao": "editar",
+  "id_nivel": 1,
+  "nome_nivel": "TesteSegundoNivel"
+}
+
+
+
+LISTAR TODOS os NIVEIS <-- OK
+{
+    "requisicao": "listar",
+    "nome": ""
+}
+
+EXCLUIR NIVEL
+
+{
+    "requisicao":"excluir",
+    "id_nivel": 5
+}
+
+
+REQUISIÇÕES DESCARTES
+
+ATUALIZAR DESCARTE COM STATUS E DATA DE RETIRADA <---- OK
+
+{
+  "requisicao": "alterar",
+  "id_descarte": 2,
+  "status": "testeStatus3",
+  "data_retirada": "2020-12-12 08:00:00"
+}
+
+
+
+
+
+REQUISIÇÕES CHAMADOS
+
+ADICIONAR CHAMADO <--- OK
+
+{
+    "requisicao": "add",
+    "titulo": "Teste",
+    "descricao": "dsadasdasdas",
+    "id_cliente": 1,
+    "data_abertura": "2022-10-13 18:29:10",
+    "data_limite": "2022-10-13 20:29:10",
+    "status": "Aguardando contato",
+    "local_atend": "Remoto",
+    "prioridade": "Alta",
+    "foto_erro_chamado": "teste.png"
+}
+
+LISTAR TODOS os CHAMADOS <--- OK
+
+{
+  "requisicao": "listar",
+  "titulo": ""
+}
+
+
+CLIENTES - ADICIONAR CLIENTE <---- OK 
+{
+  "requisicao": "add",
+  "nome": "Fabricio",
+  "cpf": "3933201201",
+  "telefone": "1289473943",
+  "cnpj": "",
+  "razaoSocial": "",
+  "idTipo": 1,
+  "email": "fa@hotmail.com",
+  "senha": "123"
+}
+
+
+ENDEREÇOS  ADD <-- OK
+{
+  "requisicao": "add",
+  "id_cliente_endereco": 1,
+  "cep": "088943",
+  "logradouro_endereco": "Rua Valter",
+  "num_endereco": "90",
+  "complemento_endereco": "Avenida",
+  "bairro_endereco": "Romanopolis",
+  "cidade_endereco": "São Paulo",
+  "estado_endereco": "SP"
+}
+
+LISTAR ENDEREÇOS POR CLIENTE <-- OK 
+{
+  "requisicao": "listarPorCliente",
+  "id_cliente_endereco": 1
+}
+
+ATUALIZAR EMAIL CLIENTE <--- OK 
+{
+    "requisicao": "atualizaEmail",
+    "senha_atual": "12345",
+    "email_novo": "teste@email",
+    "id_cliente": 18
+}
+
+ATUALIZAR FOTO CLIENTE <-- OK
+{
+    "requisicao": "atualizaFoto",
+    "foto_cliente": "teste.teste",
+    "id_cliente": "8"
+}
+
+RECUPERAR PLANOS POR CLIENTE <-- OK
+{
+    "requisicao": "recuperarPlano",
+    "id_cliente": 1
+}
+
+LISTAR TODOS OS CLIENTES <-- OK
+{
+  "requisicao": "listar",
+  "nome": ""
+}
+
+
+ATUALIZA EMAIL DO USUÁRIO <-- OK 
+
+  {
+    "requisicao": "atualizaEmail",
+    "id_usuario": 1,
+    "email_usuario": "aaa@teste"
+}
+
+
+ATUALIZA NOME DO USUÁRIO <-- OK 
+{
+  "requisicao": "atualizaNome",
+  "id_usuario": 1,
+  "nome_usuario": "testeNome"
+}
+
+
+ATUALIZA LOGIN DO USUÁRIO <--OK
+{
+    "requisicao": "atualizaLogin",
+    "id_usuario": 1,
+    "login_usuario": "testeLogin"
+}
+
+ATUALIZA NIVEL DO USUÁRIO <-- OK
+
+{
+    "requisicao": "atualizaNivel",
+    "id_usuario": 1,
+    "id_nivel_usuario": 2
+}
+
+
+ATUALIZA CONTRATO CLIENTE <-- OK
+
+{
+    "requisicao": "ativarPlano",
+    "id_cliente": 1,
+    "id_contrato": 3
+}

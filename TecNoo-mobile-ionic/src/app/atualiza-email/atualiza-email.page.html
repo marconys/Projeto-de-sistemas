@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button>
+        </ion-menu-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Atualizar endereço</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- Teremos apenas um formulário simples com a senha do usuário e o email a ser sugerido -->
+<ion-content>
+  <ion-card class="ion-padding">
+
+    <ion-card class="ion-padding" color="warning">
+      <div style="display: flex; justify-content:center">
+      <ion-icon name="information-circle-sharp" style="font-size: 2rem;"></ion-icon>
+      </div>
+      <br>
+      <ion-card-title style="font-size: 15px;">
+        Para atualizar seu endereço de e-mail será necessário informar sua senha atual.
+      </ion-card-title>
+     </ion-card>
+
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" color="light">
+      <ion-item>
+        <ion-label position="floating" color="primary">Senha atual</ion-label>
+        <ion-input type="password" formControlName="senhaAtual" required></ion-input>
+      </ion-item>
+      <!-- Validações senha atual -->
+      <span class="ion-padding text-danger" *ngIf="isSubmitted && errorControl.senhaAtual.errors?.required">
+        <ion-text color="danger">
+          A senha é requerida.
+        </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.senhaAtual.errors?.minlength">
+        <ion-text color="danger">
+          A senha deve conter ao menos 2 caracteres.
+        </ion-text>
+      </span>
+      
+      <ion-item>
+        <ion-label position="floating" color="primary">Novo endereço</ion-label>
+        <ion-input type="text" formControlName="novoEmailUm" required></ion-input>
+      </ion-item>
+      <!-- Validações email UM -->
+      <span class="ion-padding text-danger" *ngIf="isSubmitted && errorControl.novoEmailUm.errors?.required">
+        <ion-text color="danger">
+          O campo e-mail é requerido.
+        </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.novoEmailUm.errors?.minlength">
+        <ion-text color="danger">
+          O campo e-mail deve conter ao menos 5 caracteres.
+          </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.novoEmailUm.errors?.maxlength">
+        <ion-text color="danger">
+          O campo e-mail deve conter no máximo 32 caracteres.
+        </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.novoEmailUm.errors?.email">
+        <br>
+        <ion-text color="danger">
+          O campo e-mail deve ser um e-mail válido.
+        </ion-text>
+        
+      </span>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Insira novamente o endereço</ion-label>
+        <ion-input type="text" formControlName="novoEmailDois" required></ion-input>
+      </ion-item>
+      <!-- Validações email dois-->
+      <span class="ion-padding text-danger" *ngIf="isSubmitted && errorControl.novoEmailDois.errors?.required">
+        <ion-text color="danger">
+          O campo e-mail é requerido.
+        </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.novoEmailDois.errors?.minlength">
+        <ion-text color="danger">
+          O campo e-mail deve ter ao menos 5 caracteres.
+        </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.novoEmailDois.errors?.maxlength">
+        <ion-text color="danger">
+          O campo e-mail no máximo 42 caracteres.
+        </ion-text>
+      </span>
+      <span class="ion-padding" color="danger" *ngIf="isSubmitted && errorControl.novoEmailDois.errors?.email">
+        <br>
+        <ion-text color="danger">
+          O campo e-mail deve ser um e-mail válido.
+        </ion-text>
+      </span>
+
+      <ion-card class="ion-padding">
+        <ion-text>
+          Ao clicar em atualizar, você será redirecionado para a tela de login.
+        </ion-text>
+      </ion-card>
+
+      <ion-button type="submit" expand="block" color="primary">Atualizar</ion-button>
+    </form>
+  </ion-card>
+  
+</ion-content>

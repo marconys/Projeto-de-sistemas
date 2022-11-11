@@ -1,0 +1,131 @@
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\Tecnoo.exe.config
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\Tecnoo.exe
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\Tecnoo.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.csproj.AssemblyReference.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.csproj.SuggestedBindingRedirects.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.Properties.Resources.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.csproj.GenerateResource.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.csproj.CoreCompileInputs.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.exe
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\Google.Protobuf.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\MySql.Data.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Buffers.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Memory.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\ZstdNet.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\Google.Protobuf.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\Google.Protobuf.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\MySql.Data.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Buffers.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Memory.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.F_Login.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.csproj.CopyComplete
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.F_Adm.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.F_ListaCliente.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.F_ListaUsuarios2.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.Lista_Chamados.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo\Tecnoo\obj\Debug\Tecnoo.F_EditaChamado.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\Tecnoo\Tecnoo\obj\Debug\Tecnoo.F_AdicionarEditarUsuario.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\Tecnoo\Tecnoo\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\Tecnoo\Tecnoo\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\Tecnoo.exe.config
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\Tecnoo.exe
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\Tecnoo.pdb
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\Google.Protobuf.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\MySql.Data.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Buffers.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Memory.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\ZstdNet.dll
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\Google.Protobuf.pdb
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\Google.Protobuf.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\MySql.Data.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Buffers.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Memory.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.AssemblyReference.cache
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.SuggestedBindingRedirects.cache
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Login.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_AdicionarEditarUsuario.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Adm.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_EditaChamado.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_ListaCliente.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_ListaUsuarios2.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.Lista_Chamados.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.Properties.Resources.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.GenerateResource.cache
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.CoreCompileInputs.cache
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.CopyComplete
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.exe
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\Tecnoo.exe.config
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\Tecnoo.exe
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\Tecnoo.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\Google.Protobuf.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\MySql.Data.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Buffers.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Memory.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\ZstdNet.dll
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\Google.Protobuf.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\Google.Protobuf.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\MySql.Data.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Buffers.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Memory.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.AssemblyReference.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.SuggestedBindingRedirects.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Login.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_AdicionarEditarUsuario.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Adm.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_EditaChamado.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_ListaCliente.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_ListaUsuarios2.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.Lista_Chamados.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.Properties.Resources.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.GenerateResource.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.CoreCompileInputs.cache
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.csproj.CopyComplete
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.exe
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.pdb
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Home.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Historico.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Historico.resources
+C:\Users\marconys.pmoura\Desktop\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_Home.resources
+C:\Users\GAMER\OneDrive\Área de Trabalho\TecNoo-DeskTop\Tecnoo\obj\Debug\Tecnoo.F_ClienteNovo.resources

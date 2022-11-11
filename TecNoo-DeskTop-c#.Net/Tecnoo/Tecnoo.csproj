@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43673E63-E82A-4BC2-B05F-7C6263D19457}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tecnoo</RootNamespace>
+    <AssemblyName>Tecnoo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Banco.cs" />
+    <Compile Include="Entities\Chamado.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Endereco.cs" />
+    <Compile Include="Entities\Hash.cs" />
+    <Compile Include="Entities\HistoricoChamado.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="F_ClienteNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ClienteNovo.Designer.cs">
+      <DependentUpon>F_ClienteNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Historico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Historico.Designer.cs">
+      <DependentUpon>F_Historico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Home.Designer.cs">
+      <DependentUpon>F_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_login.Designer.cs">
+      <DependentUpon>F_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_AdicionarEditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_AdicionarEditarUsuario.Designer.cs">
+      <DependentUpon>F_AdicionarEditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Adm.Designer.cs">
+      <DependentUpon>F_Adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_EditaChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_EditaChamado.Designer.cs">
+      <DependentUpon>F_EditaChamado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ListaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ListaCliente.Designer.cs">
+      <DependentUpon>F_ListaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ListaUsuarios2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ListaUsuarios2.Designer.cs">
+      <DependentUpon>F_ListaUsuarios2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista-Chamados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista-Chamados.Designer.cs">
+      <DependentUpon>Lista-Chamados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="F_ClienteNovo.resx">
+      <DependentUpon>F_ClienteNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Historico.resx">
+      <DependentUpon>F_Historico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Home.resx">
+      <DependentUpon>F_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_login.resx">
+      <DependentUpon>F_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_AdicionarEditarUsuario.resx">
+      <DependentUpon>F_AdicionarEditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Adm.resx">
+      <DependentUpon>F_Adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_EditaChamado.resx">
+      <DependentUpon>F_EditaChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ListaCliente.resx">
+      <DependentUpon>F_ListaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ListaUsuarios2.resx">
+      <DependentUpon>F_ListaUsuarios2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista-Chamados.resx">
+      <DependentUpon>Lista-Chamados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tecnoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_icon-icons.com_70975.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systemlogout_103410.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrousel-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_notes_930.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notes_2_43442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msn_user_avatar_person_people_icon_124220.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

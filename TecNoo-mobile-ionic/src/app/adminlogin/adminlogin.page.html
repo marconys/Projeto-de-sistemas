@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button>
+        </ion-menu-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Login - Admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="container">
+
+    <ion-icon 
+    style="font-size: 10rem; color: white;"
+    name="person-circle">
+
+    </ion-icon>
+
+    
+    <ion-card class="ion-padding" color="warning">
+      <div style="display: flex; justify-content:center">
+      <ion-icon name="information-circle-sharp" style="font-size: 2rem;"></ion-icon>
+      </div>
+      <br>
+      <ion-card-title style="font-size: 15px;">
+        Esse é um acesso apenas para administradores.
+      </ion-card-title>
+     </ion-card>
+
+
+     <ion-card id="card-login" class="container ion-text-center">
+    <form style="width: 100vw; margin-top: 1rem;" class="ion-padding" [formGroup]="formGroup" (ngSubmit)="onSubmit()" color="light">
+      <ion-item>
+        <ion-label position="floating" color="primary" style="font-size: 16px;">
+          <b>Login de usuário</b>
+        </ion-label>
+        <ion-input
+        formControlName="login"
+        required
+        placeholder="Digite seu login de usuário"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary" style="font-size: 16px;">
+        <b>Senha</b></ion-label>
+        <ion-input
+        type="password"
+        required
+        placeholder="Insira sua senha"
+        formControlName="senha"
+        ></ion-input>
+      </ion-item>
+
+      <br>
+      <br>
+      <ion-button expand="block" class="btn" id="btn-login" type="submit" color="success" shape="round">
+        <b>Entrar</b>
+      </ion-button>
+
+      <br>
+
+    </form>
+  </ion-card>
+  </div>
+</ion-content>
